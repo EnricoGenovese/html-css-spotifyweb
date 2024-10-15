@@ -32,27 +32,11 @@ body {
     
 }
 
-.wrapper {
-    background-color: var();
-    height: 100vh;
+img {
+    max-width: 100%;
+    display: block;
 }
 
-#sidebar {
-    background-color: var(--color-black);
-    color: white;
-    display: flex;
-    flex: 0 0 230px;
-}
-.upper-content {
-    background-color: var(--color-dark);
-    flex: 1 1 auto;
-    overflow-y: auto;
-}
-.main-content {
-    flex: 1 1 auto;
-    background-color: var(--color-dark);
-    color: var(--color-main-text);
-}
 /* Page */
 
 header {
@@ -62,6 +46,7 @@ header {
     left: 0;
     z-index: 1000;
     background-color: var(--color-navy);
+    color: white;
     text-align: right;
 }
 
@@ -70,12 +55,69 @@ main {
     overflow-y: auto;
 }
 
+nav li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+section {
+    padding: 20px 10px;
+}
+
+
 footer {
     flex: 0 0 100px;
     background-color: var(--color-darkgrey);
     color: var(--color-lightgrey);
 }
 
+/* containers */
+
+.wrapper {
+    background-color: var();
+    height: 100vh;
+}
+
+.upper-content {
+    background-color: var(--color-dark);
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+#sidebar {
+    background-color: var(--color-black);
+    color: white;
+    display: flex;
+    flex: 0 0 230px;
+}
+.main-content {
+    flex: 1 1 auto;
+    background-color: var(--color-dark);
+    color: var(--color-main-text);
+}
+
+.card-place {
+    height: 200px;
+    width: calc(100% / 6);
+    margin-top: 20px;
+
+}
+
+.card {
+    padding: 10px auto;
+}
+
+.card-img {
+    width: calc(100% - 20px);
+    height: calc(60% - 20px);
+}
+
+.card-title {
+    height: 40%;
+    padding: 10px auto;
+    margin-top: 20px;
+    text-align: center;
+}
 /* flex utility */
 
 .d-flex {
@@ -84,4 +126,26 @@ footer {
 
 .flex-col {
     flex-direction: column;
+}
+
+.j-content {
+    justify-content: center;
+}
+
+.center-items {
+    align-items: center;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+/* tetx utilities */
+
+.text-up {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
 }
