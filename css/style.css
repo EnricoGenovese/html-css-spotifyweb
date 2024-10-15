@@ -9,7 +9,7 @@
 /* root */
 
 :root {
-    --color-navy: #080b1270;    /* bg-header */
+    --color-navy: #080b12bb;    /* bg-header */
     --color-dark: #141922;      /* bg-main */
     --color-darkgrey: #282828;  /* bg footer*/
     --color-light: #ffffff;
@@ -29,5 +29,59 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: forestgreen;
+    
+}
+
+.wrapper {
+    background-color: var();
+    height: 100vh;
+}
+
+#sidebar {
+    background-color: var(--color-black);
+    color: white;
+    display: flex;
+    flex: 0 0 230px;
+}
+.upper-content {
+    background-color: var(--color-dark);
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+.main-content {
+    flex: 1 1 auto;
+    background-color: var(--color-dark);
+    color: var(--color-main-text);
+}
+/* Page */
+
+header {
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--color-navy);
+    text-align: right;
+}
+
+main {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+footer {
+    flex: 0 0 100px;
+    background-color: var(--color-darkgrey);
+    color: var(--color-lightgrey);
+}
+
+/* flex utility */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
 }
