@@ -1,0 +1,33 @@
+/* reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* root */
+
+:root {
+    --color-navy: #080b1270;    /* bg-header */
+    --color-dark: #141922;      /* bg-main */
+    --color-darkgrey: #282828;  /* bg footer*/
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-main-text: #707277;     /* main tetx*/
+    --color-lightgrey: #c1c1c1;     /* footer text*/
+    --color-highlight: #9ae22d;     /* navbar hover effect*/   
+  }
+
+/* debug */ 
+
+.debug {
+    border: 1px solid red;
+}
+
+/* General */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: forestgreen;
+}
