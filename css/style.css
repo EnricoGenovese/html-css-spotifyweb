@@ -246,7 +246,27 @@ section h2 {
     /* tablet */
 @media screen and (max-width: 768px) {
     
+    nav ul li {
+        width: calc((100% - 20px) / 3);
+        }
+    
+        .card-place {
+            width: calc(100% / 2);
+            display: flex;
+            flex-wrap: wrap;
+        } 
 }
+
+
     /* mobile */
 @media screen and (max-width: 576px) {
+
+    body {
+        font-size: 0.5em;
+    }
+
+
+    nav ul li {
+        width: calc((100%) / 4);
+        }
 }     
