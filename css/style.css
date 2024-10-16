@@ -38,6 +38,7 @@ img {
     display: block;
 }
 
+
 /* Page */
 
 header {
@@ -74,7 +75,7 @@ main .main-content nav a {
     color: var(--color-main-text);
 }
 
-nav li {
+ul, li {
     padding: 10px;
     list-style-type: none;
     text-align: center;
@@ -99,7 +100,6 @@ footer {
 /* containers */
 
 .wrapper {
-    background-color: var();
     height: 100vh;
 }
 
@@ -118,6 +118,26 @@ footer {
 
 .sidebar-top {
     height: calc(100% - 90px);
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.sidebar-top a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar-top img:not(#logo) {
+    width: 25px;
+    margin-right: 5px;
 }
 
 .sidebar-bottom {
@@ -141,7 +161,7 @@ footer {
 
 .card {
     /* position: relative; */
-    padding: 5px auto;
+    padding: 5px 0;
 }
 
 .card-img {
@@ -162,12 +182,11 @@ footer {
     justify-content: center;
     font-size: 3em;
     color: var(--color-light);
-    transition: opacity 0.5;
 }
 
 .card-title {
     height: 40%;
-    padding: 10px auto;
+    padding: 10px 0;
     margin-top: 20px;
     text-align: center;
 }
