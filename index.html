@@ -13,25 +13,27 @@
 <body>
     <div class="wrapper d-flex flex-col"> <!-- Tutta la pagina -->
         <div class="upper-content d-flex">
-            <div id="sidebar" class="d-flex">
+            <div id="sidebar" class="d-flex flex-col">
                 <!-- sidebar con logo, nav di ricerca e creazione playlist personalizzabili -->
                 
                 <div class="sidebar-top d-flex flex-col">
-                    <img id="logo" src="./img/logo.svg" alt="logo">
-                    <img id="logo-small" src="./img/logo-small.svg" alt="logo-mobile">
+                    <a href="#">
+                        <img id="logo" src="./img/logo.svg" alt="logo">
+                        <img id="logo-small" src="./img/logo-small.svg" alt="logo-mobile">
+                    </a>    
                     <nav>
                         <ul>
                             <li>
                             <div>
-                                <a href="">
-                                        <img src="./img/home.svg" alt="Home">
-                                        <span class="d-none">Home</span>
-                                    </a>
+                                <a href="#">
+                                    <img src="./img/home.svg" alt="Home">
+                                    <span class="d-none">Home</span>
+                                </a>
                             </div>
                             </li>
                             <li>
                                 <div>
-                                    <a href="">
+                                    <a href="#">
                                         <img src="./img/search.svg" alt="Search">
                                         <span class="d-none">Cerca</span>
                                     </a>
@@ -39,7 +41,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <a href="">
+                                    <a href="#">
                                         <img src="./img/libreria.svg" alt="Library">
                                         <span class="d-none">La tua libreria</span>
                                     </a>
@@ -64,8 +66,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="sidebar-bottom">
-
+                <div class="sidebar-bottom d-flex flex-col">
+                    <div class="d-flex ">
+                        <a href="#" class="d-flex">
+                            <img class="download" src="./img/download.svg" alt="download">
+                            <span class="margin-space d-none">Scarica app</span>
+                        </a>
+                    </div>
+                    <div class="bar"></div>
+                    <div>
+                        <a href="#" class="d-flex">
+                            <img class="profile" src="./img/profile.svg" alt="profile">
+                            <span class="margin-space d-none"><h3>John Doe</h3></span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <main class="d-flex flex-col">
@@ -80,12 +94,12 @@
                     <div> 
                         <nav><!-- Navbar con effetto highlight su hover-->
                             <ul class="d-flex j-content text-up text-small">
-                                <li><a href="">in evidenza</a></li>
-                                <li><a href="">podcast</a></li>
-                                <li><a href="">classifiche</a></li>
-                                <li><a href="">generi e mood</a></li>
-                                <li><a href="">nuove uscite</a></li>
-                                <li><a href="">scopri</a></li>
+                                <li><a href="#">in evidenza</a></li>
+                                <li><a href="#">podcast</a></li>
+                                <li><a href="#">classifiche</a></li>
+                                <li><a href="#">generi e mood</a></li>
+                                <li><a href="#">nuove uscite</a></li>
+                                <li><a href="#">scopri</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -248,8 +262,17 @@
                 </div>
             </main>
         </div>
-        <footer class="debug">
-            footer
+        <footer class=" d-flex">
+            <div class="side-foot debug">
+
+            </div>
+            <div class="playbar d-flex flex-col j-content center-items debug">
+                
+                <input type="range">
+            </div>
+            <div class="side-foot debug">
+
+            </div>
         </footer>
     </div>
     

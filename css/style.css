@@ -33,7 +33,6 @@ body {
 }
 
 img {
-    width: 100%;
     max-width: 100%;
     display: block;
 }
@@ -114,12 +113,19 @@ footer {
     color: white;
     display: flex;
     flex: 0 0 230px;
+    min-height: 0;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .sidebar-top {
     height: calc(100% - 90px);
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 #logo {
@@ -133,8 +139,6 @@ footer {
     width: 150px;
     display: none;
 }
-
-
 
 .sidebar-top a {
     display: flex;
@@ -150,8 +154,16 @@ footer {
 .sidebar-bottom {
     height: 90px;
     background-color: var(--color-darkgrey);
+    justify-content: flex-end;
 }
 
+.download {
+    width: 20px;
+}
+
+.profile {
+    width: 30px;
+}
 
 .main-content {
     min-height: 0;
@@ -203,6 +215,21 @@ footer {
     overflow: hidden;
 }
 
+.side-foot {
+    flex: 0 1 230px;
+}
+
+.playbar {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 
+    auto;
+}
+
+.playbar input {
+    width: 70%;
+}
+
 /* flex utility */
 
 .d-flex {
@@ -224,6 +251,7 @@ footer {
 .s-between {
     justify-content: space-between;
 }
+
 
 /* text utilities */ 
 
@@ -289,6 +317,15 @@ main .main-content nav a::after  {
     width: 50px;
     height: 3px;
     margin: 0 auto;
+}
+
+.bar {
+    content: '' ;
+    display: block;
+    width: 90%;
+    height: 1px;
+    margin: 10px auto;
+    background-color: var(--color-lightgrey);
 }
 
 main .main-content nav a:hover::after {
@@ -385,7 +422,7 @@ main .main-content nav a:hover {
         width: 100%;
     }
 
-    .sidebar-top img:not(#logo) {
+    #sidebar img:not(#logo) {
         width: 50px;
         margin-right: 0;
         margin: 10px auto;
@@ -401,15 +438,13 @@ main .main-content nav a:hover {
 
 
     main nav ul li {
-        width: calc((100% - 20px) / 2);
+        width: calc((100% - 20px) / 4);
         }
 
     .card-place {
         width: calc(100%);
     }
     
-
-
     .d-none {
         display: none;
     }
