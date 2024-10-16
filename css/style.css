@@ -153,7 +153,7 @@ footer {
 
 .sidebar-bottom {
     height: 90px;
-    background-color: var(--color-darkgrey);
+    /* background-color: var(--color-darkgrey); */
     justify-content: flex-end;
 }
 
@@ -162,6 +162,9 @@ footer {
 }
 
 .profile {
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #ffffff75;
     width: 30px;
 }
 
@@ -319,10 +322,10 @@ main .main-content nav a::after  {
     margin: 0 auto;
 }
 
-.bar {
+.sidebar-bottom > div:last-child::before {
     content: '' ;
     display: block;
-    width: 90%;
+    width: 80%;
     height: 1px;
     margin: 10px auto;
     background-color: var(--color-lightgrey);
@@ -422,10 +425,19 @@ main .main-content nav a:hover {
         width: 100%;
     }
 
-    #sidebar img:not(#logo) {
+    .sidebar-top img:not(#logo) {
         width: 50px;
         margin-right: 0;
         margin: 10px auto;
+    }
+
+    .sidebar-bottom {
+        margin: 0 auto;
+    }
+
+    .sidebar-bottom img {
+        margin: 10px auto;
+        width: 30px;
     }
 
     #logo {
