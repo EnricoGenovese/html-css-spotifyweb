@@ -75,7 +75,7 @@ main .main-content nav a {
     color: var(--color-main-text);
 }
 
-ul, li {
+li {
     padding: 10px;
     list-style-type: none;
     text-align: center;
@@ -119,15 +119,22 @@ footer {
 .sidebar-top {
     height: calc(100% - 90px);
     display: flex;
-    display: flex;
     flex-direction: column;
 }
 
 #logo {
     display: flex;
-    width: 150px;
+    width: 100%;
     margin: 10px auto;
 }
+
+/* logo senza scritta solo in mobile small */
+#logo-small {
+    width: 150px;
+    display: none;
+}
+
+
 
 .sidebar-top a {
     display: flex;
@@ -224,6 +231,10 @@ footer {
     text-transform: uppercase;
 }
 
+.capitalize {
+    text-transform: capitalize
+}
+
 .text-center {
     text-align: center;
 }
@@ -231,16 +242,46 @@ footer {
 .text-small {
     font-size: 0.8em;
 }
+
 /* text colors */
 
 section h2 {
     color: var(--color-light);
 }
 
+.ligth-gray {
+    color: var(--color-main-text);
+}
+
+/* background colors */
+
+.bg-light-gray {
+    background-color: var(--color-main-text);
+}
+
+/* space utility */
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.v-padding {
+    padding: 5px 0;
+}
+
+.margin-space {
+    margin-left: 5px;
+}
+
+.big-space {
+    margin-left: 20px;
+}
 
 /* highlight */
-
-        /* non funziona, riguarda bene */
 
 main .main-content nav a::after  {
     content: '';
@@ -281,12 +322,12 @@ main .main-content nav a:hover {
 @media screen and (max-width: 1200px) {
     
          
-    nav ul {
+    main nav ul {
         width:100%;
         flex-wrap: wrap;
     }
 
-    nav ul li {
+    main nav ul li {
         width: calc((100% - 20px) / 5);
         }
     
@@ -337,14 +378,39 @@ main .main-content nav a:hover {
     }
 
 }
-
+    /* mobile small */
 @media screen and (max-width: 576px) {
 
-    nav ul li {
+    .sidebar-top li {
+        width: 100%;
+    }
+
+    .sidebar-top img:not(#logo) {
+        width: 50px;
+        margin-right: 0;
+        margin: 10px auto;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-small {
+        display: flex;
+    }
+
+
+    main nav ul li {
         width: calc((100% - 20px) / 2);
         }
 
     .card-place {
         width: calc(100%);
-    }    
+    }
+    
+
+
+    .d-none {
+        display: none;
+    }
 }
