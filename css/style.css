@@ -446,20 +446,20 @@ input[type="range"] {
     height: 2px;
     max-width: 100%;
     outline: none;;
-    -webkit-appearance: none; 
+    -webkit-appearance: none;       /* commentato perchè proprietà non standard */
 }
 
-input::-webkit-slider-runnable-track,   /* chrome */
+input[type=range]::-webkit-slider-runnable-track,   /* chrome */
 input::-moz-range-track {               /* firefox*/
     background: var(--color-main-text);
 }
 
-input::-moz-range-progress {            /* solo firefox */
+input[type=range]::-moz-range-progress {            /* solo firefox */
     background: var(--color-light);
 }
 
-input::-webkit-slider-thumb,            /* chrome */
-input::-moz-range-thumb {               /* firefox*/
+input[type=range]::-webkit-slider-thumb,            /* chrome */
+input[type=range]::-moz-range-thumb {               /* firefox*/
     height: 0;          
     width: 0;
     border-radius: 100%;
