@@ -49,13 +49,15 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="d-none playlist">
+                    <div class="d-none" id="create">
                         <h3 class="text-up p-20">Playlist</h3>
                         <div class="d-flex center-items">
                             <i class="fa-solid fa-plus bg-light-gray p-10"></i>
-                            <p class="ligth-gray small-m">Crea Playlist</p>
+                            <a href="">
+                                <p class="ligth-gray small-m">Crea Playlist</p>
+                            </a>
                         </div>
-                        <div class="ligth-gray bold  ">
+                        <div class="ligth-gray bold playlist">
                             <a href="#">
                                 <p>Nome Playlist</p>
                             </a>
@@ -88,10 +90,12 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="d-flex">
-                            <img class="profile" src="./img/profile.svg" alt="profile">
+                        <div class="d-flex">
+                            <a href="">
+                                <img class="profile" src="./img/profile.svg" alt="profile">
+                            </a>
                             <h3 class="d-none">John Doe</h3>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -278,19 +282,21 @@
         </div>
         <footer class="d-flex center-items s-around">
             
-            <div class="d-flex s-around center-items j-content side-foot left d-none">
+            <div class="d-flex s-around center-items j-content side-foot d-none" id="left">
                 <div class="d-flex center-items w-20">
                     <img src="./img/sinister.jpeg" alt="">
                 </div>    
                 <div class="text-small w-50">
                         <h3>Sinister</h3>
-                        <p>Brano Nome</p>
+                        <a href="#">
+                            <span class="ligth-gray">Brano Nome</span>
+                        </a>
                 </div>
                 <div class="f-wrap d-flex s-between icons w-20">
                     <a href="#">
-                        <i class="fa-regular fa-heart"></i></a>
+                        <i class="fa-regular fa-heart ligth-gray"></i></a>
                     <a href="#">
-                        <i class="fa-regular fa-folder"></i>
+                        <i class="fa-regular fa-folder ligth-gray"></i>
                     </a>
                 </div>
             </div>
