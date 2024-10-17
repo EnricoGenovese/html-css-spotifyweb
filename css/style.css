@@ -160,6 +160,11 @@ footer a {
     margin-right: 5px;
 }
 
+.playlist {
+    min-height: 0;
+    overflow-y: scroll;
+}
+
 .playlist p {
     padding: 10px 0;
 }
