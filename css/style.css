@@ -100,7 +100,8 @@ footer {
     z-index: 3000;
 }
 
-footer a {
+footer a,
+.side-foot .left i {
     text-decoration: none;
     color: var(--color-light);
 }
@@ -127,7 +128,7 @@ footer a {
 
 #sidebar a {
     text-decoration: none;
-    color: inherit;
+    color: var(--color-main-text);
 }
 
 .sidebar-top {
@@ -161,8 +162,13 @@ footer a {
 }
 
 .playlist {
+    flex: 1 1 auto;
     min-height: 0;
-    overflow-y: scroll;
+}
+
+.playlist > div {
+    flex: 1 1 auto;
+    overflow-y: auto;
 }
 
 .playlist p {
@@ -423,8 +429,15 @@ main .main-content nav a:hover {
 }
 
 #sidebar a:hover,
-#sidebar nav span:hover {
+#sidebar nav span:hover,
+#left a:hover i,
+#left a:hover span {
     color: var(--color-light);
+}
+
+#controls a:hover i {
+    transform: scale(1.3);
+    transition-duration: 0.2s;
 }
 
 /* media query */
