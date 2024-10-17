@@ -27,7 +27,7 @@
                             <div>
                                 <a href="#">
                                     <img src="./img/home.svg" alt="Home">
-                                    <span class="d-none">Home</span>
+                                    <span class="ligth-gray d-none">Home</span>
                                 </a>
                             </div>
                             </li>
@@ -35,7 +35,7 @@
                                 <div>
                                     <a href="#">
                                         <img src="./img/search.svg" alt="Search">
-                                        <span class="d-none">Cerca</span>
+                                        <span class="ligth-gray d-none">Cerca</span>
                                     </a>
                                 </div>
                             </li>
@@ -43,7 +43,7 @@
                                 <div>
                                     <a href="#">
                                         <img src="./img/libreria.svg" alt="Library">
-                                        <span class="d-none">La tua libreria</span>
+                                        <span class=" ligth-gray d-none">La tua libreria</span>
                                     </a>
                                 </div>
                             </li>
@@ -52,37 +52,51 @@
                     <div class="d-none">
                         <h3 class="text-up p-20">Playlist</h3>
                         <div class="d-flex center-items">
-                            <i class="fa-solid fa-plus bg-light-gray p-10 big-space"></i>
-                            <p class=" ligth-gray margin-space">Crea Playlist</p>
+                            <i class="fa-solid fa-plus bg-light-gray p-10"></i>
+                            <p class="ligth-gray small-m">Crea Playlist</p>
                         </div>
-                        <ul class="ligth-gray">
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                        </ul>
+                        <div class="ligth-gray bold  playlist">
+                            <a href="#">
+                                <p>Nome Playlist</p>
+                            </a>
+                            <a href="#">
+                                <p>Nome Playlist</p>
+                            </a>
+                            <a href="#">
+                                <p>Nome Playlist</p>
+                            </a>
+                            <a href="#">
+                                <p>Nome Playlist</p>
+                            </a>
+                            <a href="#">
+                                <p>Nome Playlist</p>
+                            </a>
+                            <a href="#">
+                                <p>Nome Playlist</p>
+                            </a>
+                            <a href="#">
+                                <p>Nome Playlist</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="sidebar-bottom d-flex flex-col">
-                    <div class="d-flex big-space">
+                <div class="sidebar-bottom d-flex flex-col"> <!-- sezione download e profilo-->
+                    <div class="d-flex">
                         <a href="#" class="d-flex">
                             <img class="download" src="./img/download.svg" alt="download">
-                            <span class="margin-space d-none">Scarica app</span>
+                            <span class="d-none">Scarica app</span>
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="d-flex big-space">
+                        <a href="#" class="d-flex">
                             <img class="profile" src="./img/profile.svg" alt="profile">
-                            <span class="margin-space d-none"><h3>John Doe</h3></span>
+                            <h3 class="d-none">John Doe</h3>
                         </a>
                     </div>
                 </div>
             </div>
             <main class="d-flex flex-col">
-                <header class="d-flex a-center">
+                <header class="d-flex center-items">
                     <a href="#" class="upgrade">
                         <div class="text-up text-small">
                             effettua l'upgrade
@@ -192,6 +206,7 @@
                             </div>
                         </div>
                     </section>
+                    
 
                     <section id="for-you">
                         <h2>Creato per John Doe</h2>
@@ -261,16 +276,76 @@
                 </div>
             </main>
         </div>
-        <footer class=" d-flex">
-            <div class="side-foot debug">
-
+        <footer class="d-flex center-items s-around">
+            
+            <div class="d-flex s-around center-items j-content side-foot left d-none">
+                <div class="d-flex center-items w-20">
+                    <img src="./img/sinister.jpeg" alt="">
+                </div>    
+                <div class="text-small w-50">
+                        <h3>Sinister</h3>
+                        <p>Brano Nome</p>
+                </div>
+                <div class="f-wrap s-around icons w-20">
+                    <a href="#">
+                        <i class="fa-regular fa-heart"></i></a>
+                    <a href="#">
+                        <i class="fa-regular fa-folder"></i>
+                    </a>
+                </div>
             </div>
-            <div class="playbar d-flex flex-col j-content center-items debug">
-                
-                <input type="range">
-            </div>
-            <div class="side-foot debug">
+            <div class="playbar d-flex flex-col s-around center-items">
+                <div class="d-flex s-between" id="controls">
+                    <ul class="d-flex j-content center-items">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-shuffle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-backward-step">
+                            </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-rotate-right"></i>
+                            </a>
+                        </li>
+                    </ul>
 
+                </div>
+                <div class="d-flex j-content  center-items w-60">
+                    <p class="small-m">2:53</p>
+                    <input type="range" name="song-playbar" id="song-playbar">
+                    <p class="small-m">4:12</p>
+                </div>
+            </div>
+            <div class="side-foot right d-none">
+                <div class="d-flex center-items s-between space">
+                    <div class="d-flex s-around icons">
+                        <a href="#">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-display space"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-volume-high space"></i>
+                        </a>
+                        <input type="range" name="volume" id="volume" class="w-50">
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
