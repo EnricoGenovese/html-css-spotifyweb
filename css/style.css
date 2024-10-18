@@ -21,9 +21,9 @@
 
 /* debug */ 
 
-.debug {
+/* .debug {
     border: 1px solid red;
-}
+} */
 
 /* General */
 
@@ -135,13 +135,13 @@ footer a,
     height: calc(100% - 90px);
     display: flex;
     flex-direction: column;
-    /* overflow-y: scroll; */
+    min-height: 0;
 }
 
 #logo {
     display: flex;
     width: 70%;
-    margin: 0 5px;
+    margin-bottom: 15px;
 }
 
 /* logo senza scritta solo in mobile small */
@@ -161,6 +161,10 @@ footer a,
     margin-right: 5px;
 }
 
+#create {
+    overflow-y: auto;
+}
+
 .playlist {
     flex: 1 1 auto;
     min-height: 0;
@@ -168,7 +172,6 @@ footer a,
 
 .playlist > div {
     flex: 1 1 auto;
-    overflow-y: auto;
 }
 
 .playlist p {
@@ -178,6 +181,7 @@ footer a,
 .sidebar-bottom {
     height: 90px;
     justify-content: flex-end;
+    background-color: var(--color-black);
 }
 
 .download {
@@ -446,7 +450,7 @@ input[type="range"] {
     height: 2px;
     max-width: 100%;
     outline: none;;
-    -webkit-appearance: none;       /* commentato perchè proprietà non standard */
+    -webkit-appearance: none;       /* proprietà non standard */
 }
 
 input[type=range]::-webkit-slider-runnable-track,   /* chrome */
